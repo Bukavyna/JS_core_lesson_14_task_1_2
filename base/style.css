@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+form {
+	width: 80%;
+	margin: 50px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+input{
+	width: 30%;
+	height: 7vw;
+	border-radius: 0.6vw;
+	border: #E8E8E8 1px solid;
+	outline: none;
+}
+
+.button-move {
+	background-color: #28A643;
+	color: white;
+	cursor: pointer;
+}
+
+.place {
+	width: 100%;
+}
