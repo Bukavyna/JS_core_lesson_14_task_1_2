@@ -8,15 +8,85 @@
 </head>
 <body>
 
-<form name="formOne">
-	<input type="text" name="text">
-	<input type="button" name="move" value="move" class="button-move">
-	<input type="text" name="show">
-</form>
+<!--<form name="formOne">-->
+<!--	<input type="text" name="text">-->
+<!--	<input type="button" name="move" value="move" class="button-move">-->
+<!--	<input type="text" name="show">-->
+<!--</form>-->
 
-<form name="formTwo">
-	<input type="text" name="place" class="place">
-</form>
+<!--<form name="formTwo">-->
+<!--	<input type="text" name="place" class="place">-->
+<!--</form>-->
+
+
+<div id="container">
+	<h2 class="h2">Create your account</h2>
+	<form name="ff" id="formContent">
+		<label class="label-text">First Name</label>
+		<input class="text" type="text" name="firstName" placeholder="Ivan">
+		<label class="label-text">Second Name</label>
+		<input class="text" type="text" name="secondName" placeholder="Ivanyshyn">
+		<label class="label-text">Email address</label>
+		<input class="text" type="email" name="emailName" placeholder="ii@gmail.com">
+
+		<div class="text radio-block">
+			<input type="radio" name="rad" id="rad-man" checked>
+			<label class="label-radio" for="rad-man">man</label>
+			<input type="radio" name="rad" id="rad-woman">
+			<label class="label-radio" for="rad-woman">woman</label>
+		</div>
+
+		<label class="label-text">Position</label>
+		<select class="text" name="works">
+			<option value="choose">Choose</option>
+			<option value="frontend">Frontend</option>
+			<option value="backend">Backend</option>
+			<option value="qc/qa">QC/QA</option>
+		</select>
+
+		<div class="box-check">
+			<input type="checkbox" id="check" name="check">
+			<label class="text label-check" for="check">I agree all statements in Terms of service</label>
+		</div>
+		<small hidden id="check_error" style="color: red;">require checkbox</small>
+
+		<button id="button-up" type="button" name="butt">Sign Up</button>
+	</form>
+</div>
+
+
+
+	<div id="container-show">
+		<div class="h2 h2-show"></div>
+
+		<div class="box-sex">
+			<img class="box-sex-background image-man" src="base/images/man.jpeg" alt="image man">
+			<img class="box-sex-background image-woman" src="base/images/woman.jpg" alt="image woman">
+		</div>
+
+		<p id="firstName-show"></p>
+		<p id="secondName-show"></p>
+		<p id="emailName-show"></p>
+		<p id="work-show"></p>
+
+		<hr>
+
+		<button class="button-up-show" type="button" name="button-up-show">Sign Out</button>
+
+		<footer>
+			<a href="https://www.facebook.com/" target="_blank">
+				<img src="base/images/facebook.svg" alt="Facebook">
+			</a>
+			<a href="https://www.linkedin.com/" target="_blank">
+				<img class="image-marg" src="base/images/linkedin.svg" alt="LinkedIn">
+			</a>
+			<a href="https://www.example.com/cat" target="_blank">
+				<img src="base/images/github.svg" alt="Github">
+			</a>
+		</footer>
+	</div>
+
+
 
 	<script src="base/JS/script.js"></script>
 
